@@ -4,7 +4,7 @@ services:
     build: ./front
     container_name: api_sale_service_front
     volumes:
-      - ./front:/app
+      - ./front:/front
     ports:
       - 3000:3000
     stdin_open: true
