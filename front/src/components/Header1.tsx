@@ -47,17 +47,25 @@ const Header1: FC = () => (
           </HashLink>
         </nav>
 
-        <a href="#" className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">
-          ログイン
-        </a>
+        <div className="mt-4 flex items-center md:mt-0">
+          <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
+            <button
+              type="button"
+              className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:text-indigo-500 focus-visible:ring active:text-indigo-600 md:text-base"
+            >
+              <Link to="/login">ログイン</Link>
+            </button>
+            <button
+              type="button"
+              className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-center text-sm  text-white outline-none hover:bg-blue-600 active:bg-blue-700 md:text-base"
+              // eslint-disable-next-line @typescript-eslint/no-misused-promises
+            >
+              <Link to="/signup">新規登録</Link>
+            </button>
+          </div>
+        </div>
 
-        <button type="button" className="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-          </svg>
 
-          Menu
-        </button>
       </div>
     </div>
   </div>

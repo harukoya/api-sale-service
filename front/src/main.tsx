@@ -6,7 +6,7 @@ import App from './App';
 // import Canceled from './routes/Canceled';
 // import CanceledAuth from './routes/CanceledAuth';
 // import Doc from './routes/Doc';
-// import Login from './routes/Login';
+import Login from './routes/Login';
 // import MyPage from './routes/MyPage';
 // import NoMatch from './routes/NoMatch';
 // import PrivacyPolicy from './routes/PrivacyPolicy';
@@ -28,6 +28,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
