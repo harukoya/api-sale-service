@@ -59,7 +59,7 @@ const Contact: FC = () => (
         <div className="flex items-center justify-between sm:col-span-2">
           <button
             type="submit"
-            className="inline-flex rounded border-0 bg-blue-500 py-3 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none active:bg-blue-700"
+            className="inline-flex rounded border-0 bg-indigo-500 py-3 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none active:bg-blue-700"
           >
             送信
           </button>

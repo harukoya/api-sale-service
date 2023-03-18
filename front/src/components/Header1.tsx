@@ -51,13 +51,13 @@ const Header1: FC = () => (
           <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
             <button
               type="button"
-              className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:text-indigo-500 focus-visible:ring active:text-indigo-600 md:text-base"
+              className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:text-indigo-500 focus-visible:ring active:text-indigo-700 md:text-base"
             >
               <Link to="/login">ログイン</Link>
             </button>
             <button
               type="button"
-              className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-center text-sm  text-white outline-none hover:bg-blue-600 active:bg-blue-700 md:text-base"
+              className="inline-block rounded-lg bg-indigo-500 px-5 py-3 text-center text-sm  text-white outline-none hover:bg-blue-600 active:bg-blue-700 md:text-base"
               // eslint-disable-next-line @typescript-eslint/no-misused-promises
             >
               <Link to="/signup">新規登録</Link>

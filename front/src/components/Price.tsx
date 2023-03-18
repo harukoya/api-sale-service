@@ -125,7 +125,7 @@ const Price: FC = () => (
     <div className="mt-20 flex justify-center">
       <button
         type="button"
-        className="inline-flex rounded border-0 bg-blue-500 py-3 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none active:bg-blue-700"
+        className="inline-flex rounded border-0 bg-indigo-500 py-3 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none active:bg-indigo-700"
       >
         <a href="#">無料ではじめる</a>
       </button>
