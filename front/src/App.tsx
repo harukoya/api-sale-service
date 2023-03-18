@@ -1,45 +1,43 @@
-import { useState, FC } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { FC } from 'react'
+import Header1 from './components/Header1';
+import Footer from './components/Footer';
+import Overview from './components/Overview';
+import Feature from './components/Feature';
+import Price from './components/Price';
+import Contact from './components/Contact';
 
-const App: FC = () => {
-  const [count, setCount] = useState(0);
+const App: FC = () => (
+  <>
+    <header>
+      <Header1 />
+    </header>
+    <main>
+      <Overview />
+      <Feature />
+      <Price />
+      <Contact />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </>
+);
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={reactLogo} className="App-logo" alt="logo" />
-        <p className="text-blue-300 bg-red-600">Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((c) => c + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://react.js.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  );
-};
+// const App: FC = () => (
+//   <>
+//     <header>
+//       <Header1 />
+//     </header>
+//     <main>
+//       <Overview />
+//       <Feature />
+//       <Price />
+//       <Contact />
+//     </main>
+//     <footer>
+//       <Footer />
+//     </footer>
+//   </>
+// );
 
-export default App
+export default App;
