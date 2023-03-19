@@ -10,4 +10,14 @@ services:
     stdin_open: true
     tty: true
     command: npm run dev
+  api:
+    build: ./api
+    container_name: api_sale_service_api
+    volumes:
+      - ./api:/api
+    ports:
+      - 80:8000
+    stdin_open: true
+    tty: true
+    command: chalice local --host=0.0.0.0 --port=8000
 
