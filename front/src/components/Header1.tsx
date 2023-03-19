@@ -57,7 +57,7 @@ const Header1: FC = () => (
             </button>
             <button
               type="button"
-              className="inline-block rounded-lg bg-indigo-500 px-5 py-3 text-center text-sm  text-white outline-none hover:bg-blue-600 active:bg-blue-700 md:text-base"
+              className="inline-block rounded-lg bg-indigo-500 px-3 py-3 text-center text-sm  text-white outline-none hover:bg-blue-600 active:bg-blue-700 md:text-base"
               // eslint-disable-next-line @typescript-eslint/no-misused-promises
             >
               <Link to="/signup">新規登録</Link>
