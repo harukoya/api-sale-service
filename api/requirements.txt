@@ -1,0 +1,2 @@
+chalice
+imap2dict==0.1.2

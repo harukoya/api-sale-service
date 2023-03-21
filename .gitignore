@@ -12,3 +12,10 @@ stats.html
 
 .eslintcache
 
+.env
+.env.local
+
+# Chalice
+*/.chalice/deployments/
+*/.chalice/deployed/
+*/.chalice/venv/

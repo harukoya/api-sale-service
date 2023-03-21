@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, FC } from 'react';
 import Logo from '../assets/FM_Mail_logo.svg';
 import OutsideClickHandler from './OutsideClickHandler';
+import {Auth} from 'aws-amplify';
 
 const Header2: FC = () => {
   // 通知プルダウンの制御用
@@ -163,6 +164,7 @@ const Header2: FC = () => {
                         <button
                           type="button"
                           className="block w-full py-2 px-4 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                          onClick={() => Auth.signOut()}
                         >
                           <Link to="/">ログアウト</Link>
                         </button>
